@@ -10,7 +10,23 @@
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
+<body>
+  <p id="counter">0</p>
+  <button id="incrementBtn">Increment</button>
 
+  <script>
+    let count = 0;
+
+    const counter = document.getElementById("counter");
+    const incrementBtn = document.getElementById("incrementBtn");
+
+    incrementBtn.addEventListener("click", function() {
+      alert(count);
+      count++;
+      counter.textContent = count;
+    });
+  </script>
+</body>
 </body>
 
 </html>
